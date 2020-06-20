@@ -23,7 +23,7 @@ public class Inventario {
 	public void removeProd(Producto p) {
 		this.productos.remove(p);
 	}
-	public boolean checkExists(Producto p) {
+	public boolean checkExistsProd(Producto p) {
 		return this.productos.contains(p);
 	}
 
