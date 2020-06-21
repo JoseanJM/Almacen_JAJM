@@ -93,6 +93,8 @@ public class Inventario {
 				System.out.println("Introduzca los nuevos datos para el prodcucto " + prodBuscado);
 				System.out.println("Codigo:");
 				tmpAnalizando.setCodigo(sn4.nextLine());
+				System.out.println("Nombre:");
+				tmpAnalizando.setNomProd(sn4.nextLine());
 				System.out.println("Descripcion:");
 				tmpAnalizando.setDescrip(sn4.nextLine());
 				System.out.println("Cuantos hay en stock:");
@@ -108,7 +110,8 @@ public class Inventario {
 				tmpAnalizando.setEstanteria(sn4.nextLine());
 
 				System.out.println("Los nuevos datos para el producto son:");
-				tmpAnalizando.toString();
+				System.out.println(tmpAnalizando.toString());
+				//tmpAnalizando.toString();
 
 			} // fin if
 			else {
