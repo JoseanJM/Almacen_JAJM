@@ -114,7 +114,7 @@ public class AgendaClientes {
 
 				System.out.println("Los nuevos datos para el cliente son:");
 				System.out.println(tmpAnalizando.toString());
-				//tmpAnalizando.toString();
+				
 
 			} // fin if
 			else {

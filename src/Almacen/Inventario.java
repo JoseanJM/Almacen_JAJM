@@ -111,7 +111,7 @@ public class Inventario {
 
 				System.out.println("Los nuevos datos para el producto son:");
 				System.out.println(tmpAnalizando.toString());
-				//tmpAnalizando.toString();
+				
 
 			} // fin if
 			else {

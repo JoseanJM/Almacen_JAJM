@@ -1,100 +1,120 @@
 package Almacen;
 
+import java.util.List;
+
 public class Pedido {
-	
-	private String productos;
+
+	private String prodsPedido;
 	private String cantidad;
-	//direccion para xml
-	private String calle;//cliente.calle
-	private String numero;//cliente.numero
-	private String codPost;//cliente.codPost
-	private String poblacion;//cliente.poblacion
-	private String pais;//cliente.pais
-	
-	private String destinatario;//"cliente.nombre"+" "+"cliente.apellidos
+	private String destPedido;// c.getNom()+" "+c.getApe1()+" "+c.getApe2();
+	// direccionEntrega para xml
+	private String calleDest;// cliente.calle
+	private String numeroDest;// cliente.numero
+	private String codPostDest;// cliente.codPost
+	private String poblacionDest;// cliente.poblacion
+	private String paisDest;// cliente.pais
+
 	private String fechaEntrega;
-	
-	
-	public Pedido () {
-		
+
+	public Pedido() {
+
 	}
-	
-	
-	
-	public Pedido(String productos, String cantidad, String calle, String numero, String codPost, String poblacion,
-			String pais, String destinatario, String fechaEntrega) {
+
+	// constructor para pedido
+	public Pedido(String prodsPedido, String cantidad, String destPedido, String calleDest, String numeroDest,
+			String codPostDest, String poblacionDest, String paisDest, String fechaEntrega) {
 		super();
-		this.productos = productos;
+		this.prodsPedido = prodsPedido;
 		this.cantidad = cantidad;
-		this.calle = calle;
-		this.numero = numero;
-		this.codPost = codPost;
-		this.poblacion = poblacion;
-		this.pais = pais;
-		this.destinatario = destinatario;
+		this.destPedido = destPedido;
+		this.calleDest = calleDest;
+		this.numeroDest = numeroDest;
+		this.codPostDest = codPostDest;
+		this.poblacionDest = poblacionDest;
+		this.paisDest = paisDest;
 		this.fechaEntrega = fechaEntrega;
 	}
 
-
-
-
-
-	public String getProductos() {
-		return productos;
+	// getters y setters
+	public String getProdsPedido() {
+		return prodsPedido;
 	}
-	public void setProductos(String productos) {
-		this.productos = productos;
+
+	public void setProdsPedido(String prodsPedido) {
+		this.prodsPedido = prodsPedido;
 	}
+
 	public String getCantidad() {
 		return cantidad;
 	}
+
 	public void setCantidad(String cantidad) {
 		this.cantidad = cantidad;
 	}
-	public String getCalle() {
-		return calle;
+
+	public String getDestPedido() {
+		return destPedido;
 	}
-	public void setCalle(String calle) {
-		this.calle = calle;
+
+	public void setDestPedido(String destPedido) {
+		this.destPedido = destPedido;
 	}
-	public String getNumero() {
-		return numero;
+
+	public String getCalleDest() {
+		return calleDest;
 	}
-	public void setNumero(String numero) {
-		this.numero = numero;
+
+	public void setCalleDest(String calleDest) {
+		this.calleDest = calleDest;
 	}
-	public String getCodPost() {
-		return codPost;
+
+	public String getNumeroDest() {
+		return numeroDest;
 	}
-	public void setCodPost(String codPost) {
-		this.codPost = codPost;
+
+	public void setNumeroDest(String numeroDest) {
+		this.numeroDest = numeroDest;
 	}
-	public String getPoblacion() {
-		return poblacion;
+
+	public String getCodPostDest() {
+		return codPostDest;
 	}
-	public void setPoblacion(String poblacion) {
-		this.poblacion = poblacion;
+
+	public void setCodPostDest(String codPostDest) {
+		this.codPostDest = codPostDest;
 	}
-	public String getPais() {
-		return pais;
+
+	public String getPoblacionDest() {
+		return poblacionDest;
 	}
-	public void setPais(String pais) {
-		this.pais = pais;
+
+	public void setPoblacionDest(String poblacionDest) {
+		this.poblacionDest = poblacionDest;
 	}
-	public String getDestinatario() {
-		return destinatario;
+
+	public String getPaisDest() {
+		return paisDest;
 	}
-	public void setDestinatario(String destinatario) {
-		this.destinatario = destinatario;
+
+	public void setPaisDest(String paisDest) {
+		this.paisDest = paisDest;
 	}
+
 	public String getFechaEntrega() {
 		return fechaEntrega;
 	}
+
 	public void setFechaEntrega(String fechaEntrega) {
 		this.fechaEntrega = fechaEntrega;
 	}
-	
-	
-	
+
+	@Override
+	public String toString() {
+		return "<Pedido>" + "\n\t<prodsPedido>" + prodsPedido + "</prodsPedido>" + "\n\t<cantidad>" + cantidad
+				+ "</cantidad>" + "\n\t<destPedido>" + destPedido + "</destPedido>" + "\n\t<DireccionEntrega>"
+				+ "\n\t\t<calleDest>" + calleDest + "</calleDest>" + "\n\t\t<numeroDest>" + numeroDest
+				+ "</numeroDest>\n\t\t<codPostDest>" + codPostDest + "</codPostDest>\n\t\t<poblacionDest>" + poblacionDest + "</poblacionDest>\n\t\t<paisDest>"
+				+ paisDest + "</paisDest>\n\t</DireccionEntrega>\n\t<fechaEntrega>" + fechaEntrega + "</fechaEntrega>\n</Producto>";
+	}
 
 }

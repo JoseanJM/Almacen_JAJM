@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8">
+<Almacen>
+<Producto>
+	<codigo>1</codigo>
+	<nomProd>manzana</nomProd>
+	<descrip>reineta</descrip>
+	<stock>100</stock>
+	<pendientes>23</pendientes>
+	<localizacion>
+		<pasillo>1</pasillo>
+		<estante>1</estante>
+		<estanteria>1</estanteria>
+	</localizacion>
+</Producto>
+<Cliente>
+	<nombre>jose</nombre>
+	<apellido1>jimenez</apellido1>
+	<apellido2>moran</apellido2>
+	<email>josean@gmail.com</email>
+	<telefono>629630407</telefono>
+	<Direccion>
+		<calle>juan de herrera</calle>
+		<numero>18</numero>
+		<codPostal>28300</codPostal>
+		<poblacion>aranjuez</poblacion>
+		<pais>españa</pais>
+	</Direccion>
+</Cliente>
+<Pedido>
+	<prodsPedido></prodsPedido>
+	<cantidad>20</cantidad>
+	<destPedido>
+	<nombre>jose</nombre>
+	<apellido1>jimenez</apellido1>
+	<apellido2>moran</apellido2>
+	</destPedido>
+	<DireccionEntrega>
+		<calleDest>juan de herrera</calleDest>
+		<numeroDest>18</numeroDest>
+		<codPostDest>28300</codPostDest>
+		<poblacionDest>aranjuez</poblacionDest>
+		<paisDest>españa</paisDest>
+	</DireccionEntrega>
+	<fechaEntrega></fechaEntrega>
+</Producto>
+</Almacen>
