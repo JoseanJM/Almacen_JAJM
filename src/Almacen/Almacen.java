@@ -1,11 +1,20 @@
 package Almacen;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 public class Almacen {
 
@@ -334,5 +343,77 @@ public class Almacen {
 		writer.close();
 		}
 	}
+	
+	
+	/*
+	 * no se como acabar esta parte para poder arrancar el programa desde el backup del xml
+	public static void leerProdXML() {
+		// hay que crear los iniciadores, y el propio archivo.
+		File archivoXML= new File("Almacen.xml");
+		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+		DocumentBuilder db=dbf.newDocumentBuilder();
+		//crear el documento y pasarle como parametro el File creado anteriormente
+		Document doc= db.parse(archivoXML);
+		//para eliminar espacios en blanco en las etiquetas
+		doc.getDocumentElement().normalize();
+		//hay que decirle que tiene que tener en cuenta para saber que es un nodo.
+		Element raiz = doc.getDocumentElement();//el elemento raiz
+		NodeList almacenNodos = raiz.getElementsByTagName("Almacen");
+		
+		NodeList productoNodos =doc.getElementsByTagName(“Producto”);
+		for(int i =0; i< productoNodos.getLength(); i++) {
+			Node pNodo = productoNodos.item(i);
+			Element pElement = (Element)pNodo;
+			Node codigoNodo =pElement.getElementsByTagName("codigo").item(0);
+			Element codigoElement = (Element)codigoNodo;
+			String codigo = codigoElement.getTextContent();
+			
+			Node nomNodo =pElement.getElementsByTagName("nomProd").item(0);
+			Element nomProdElement = (Element)nomNodo;
+			String nomProd = nomProdElement.getTextContent();
+			
+			Node descripNodo =pElement.getElementsByTagName("descrip").item(0);
+			Element descripElement = (Element)descripNodo;
+			String descrip = descripElement.getTextContent();
+			
+			Node stockNodo =pElement.getElementsByTagName("stock").item(0);
+			Element stockElement = (Element)stockNodo;
+			String stock = stockElement.getTextContent();
+			
+			Node pendientesNodo =pElement.getElementsByTagName("pendientes").item(0);
+			Element pendientesElement = (Element)pendientesNodo;
+			String pendientes = pendientesElement.getTextContent();
+			
+			Node pasilloNodo =pElement.getElementsByTagName("pasillo").item(0);
+			Element pasilloElement = (Element)pasilloNodo;
+			String pasillo = pasilloElement.getTextContent();
+			
+			Node estanteNodo =pElement.getElementsByTagName("estante").item(0);
+			Element estanteElement = (Element)estanteNodo;
+			String estante = estanteElement.getTextContent();
+			
+			Node estanteriaNodo =pElement.getElementsByTagName("estanteria").item(0);
+			Element estanteriaElement = (Element)estanteriaNodo;
+			String estanteria = estanteriaElement.getTextContent();
+			
+			Producto p = new Producto();
+			p.setCodigo(codigo);
+			p.setNomProd(nomProd);
+			p.setDescrip(descrip);
+			p.setStock(stock);
+			p.setPendientes(pendientes);
+			p.setPasillo(pasillo);
+			p.setEstante(estante);
+			p.setEstanteria(estanteria);
+			
+			
+			productos.addElement(p);
+			
+			
+		}
+		
+		
+	}
+	*/
 
 }

@@ -114,7 +114,7 @@ public class Pedido {
 				+ "</cantidad>" + "\n\t<destPedido>" + destPedido + "</destPedido>" + "\n\t<DireccionEntrega>"
 				+ "\n\t\t<calleDest>" + calleDest + "</calleDest>" + "\n\t\t<numeroDest>" + numeroDest
 				+ "</numeroDest>\n\t\t<codPostDest>" + codPostDest + "</codPostDest>\n\t\t<poblacionDest>" + poblacionDest + "</poblacionDest>\n\t\t<paisDest>"
-				+ paisDest + "</paisDest>\n\t</DireccionEntrega>\n\t<fechaEntrega>" + fechaEntrega + "</fechaEntrega>\n</Producto>";
+				+ paisDest + "</paisDest>\n\t</DireccionEntrega>\n\t<fechaEntrega>" + fechaEntrega + "</fechaEntrega>\n</Pedido>";
 	}
 
 }

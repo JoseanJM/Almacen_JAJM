@@ -2,14 +2,69 @@
 <Almacen>
 <Producto>
 	<codigo>1</codigo>
-	<nomProd>manzana</nomProd>
-	<descrip>reineta</descrip>
+	<nomProd>pera</nomProd>
+	<descrip>san juan</descrip>
 	<stock>100</stock>
-	<pendientes>23</pendientes>
+	<pendientes>12</pendientes>
 	<localizacion>
 		<pasillo>1</pasillo>
 		<estante>1</estante>
 		<estanteria>1</estanteria>
+	</localizacion>
+</Producto><Producto>
+	<codigo>2</codigo>
+	<nomProd>manzana</nomProd>
+	<descrip>reineta</descrip>
+	<stock>34</stock>
+	<pendientes>0</pendientes>
+	<localizacion>
+		<pasillo>1</pasillo>
+		<estante>1</estante>
+		<estanteria>2</estanteria>
+	</localizacion>
+</Producto><Producto>
+	<codigo>3</codigo>
+	<nomProd>manzana</nomProd>
+	<descrip>golden</descrip>
+	<stock>56</stock>
+	<pendientes>8</pendientes>
+	<localizacion>
+		<pasillo>1</pasillo>
+		<estante>1</estante>
+		<estanteria>3</estanteria>
+	</localizacion>
+</Producto><Producto>
+	<codigo>4</codigo>
+	<nomProd>mandarina</nomProd>
+	<descrip>picante</descrip>
+	<stock>24</stock>
+	<pendientes>18</pendientes>
+	<localizacion>
+		<pasillo>1</pasillo>
+		<estante>2</estante>
+		<estanteria>1</estanteria>
+	</localizacion>
+</Producto><Producto>
+	<codigo>15</codigo>
+	<nomProd>melon</nomProd>
+	<descrip>villa conejos</descrip>
+	<stock>5</stock>
+	<pendientes>2</pendientes>
+	<localizacion>
+		<pasillo>1</pasillo>
+		<estante>3</estante>
+		<estanteria>3</estanteria>
+	</localizacion>
+</Producto><Producto>
+	<codigo>17</codigo>
+	<nomProd>cereza</nomProd>
+	<descrip>badajoz</descrip>
+	<stock>60</stock>
+	<pendientes>30</pendientes>
+	<localizacion>
+		<pasillo>1</pasillo>
+		<estante>3</estante>
+		<estanteria>2</estanteria>
 	</localizacion>
 </Producto>
 <Cliente>
@@ -17,30 +72,58 @@
 	<apellido1>jimenez</apellido1>
 	<apellido2>moran</apellido2>
 	<email>josean@gmail.com</email>
-	<telefono>629630407</telefono>
+	<telefono>699999999</telefono>
 	<Direccion>
-		<calle>juan de herrera</calle>
-		<numero>18</numero>
-		<codPostal>28300</codPostal>
-		<poblacion>aranjuez</poblacion>
+		<calle>juan de austria</calle>
+		<numero>14</numero>
+		<codPostal>28023</codPostal>
+		<poblacion>madrid</poblacion>
+		<pais>españa</pais>
+	</Direccion>
+</Cliente>
+<Cliente>
+	<nombre>esteban</nombre>
+	<apellido1>garcia</apellido1>
+	<apellido2>de castro</apellido2>
+	<email>egc@yahoo.es</email>
+	<telefono>688888888</telefono>
+	<Direccion>
+		<calle>ezcurdia</calle>
+		<numero>115</numero>
+		<codPostal>23856</codPostal>
+		<poblacion>gijon</poblacion>
+		<pais>españa</pais>
+	</Direccion>
+</Cliente>
+<Cliente>
+	<nombre>paloma</nombre>
+	<apellido1>moran</apellido1>
+	<apellido2>lazaro</apellido2>
+	<email>pml@terra.es</email>
+	<telefono>656565656</telefono>
+	<Direccion>
+		<calle>acentejo</calle>
+		<numero>94</numero>
+		<codPostal>28015</codPostal>
+		<poblacion>madrid</poblacion>
 		<pais>españa</pais>
 	</Direccion>
 </Cliente>
 <Pedido>
 	<prodsPedido></prodsPedido>
-	<cantidad>20</cantidad>
+	<cantidad>14153</cantidad>
 	<destPedido>
-	<nombre>jose</nombre>
-	<apellido1>jimenez</apellido1>
-	<apellido2>moran</apellido2>
+	<nombre>esteban</nombre>
+	<apellido1>garcia</apellido1>
+	<apellido2>de castro</apellido2>
 	</destPedido>
 	<DireccionEntrega>
-		<calleDest>juan de herrera</calleDest>
-		<numeroDest>18</numeroDest>
-		<codPostDest>28300</codPostDest>
-		<poblacionDest>aranjuez</poblacionDest>
+		<calleDest>ezcurdia</calleDest>
+		<numeroDest>115</numeroDest>
+		<codPostDest>23856</codPostDest>
+		<poblacionDest>gijon</poblacionDest>
 		<paisDest>españa</paisDest>
 	</DireccionEntrega>
 	<fechaEntrega></fechaEntrega>
-</Producto>
+</Pedido>
 </Almacen>
